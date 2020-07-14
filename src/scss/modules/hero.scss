@@ -1,10 +1,33 @@
 .hero {
-  padding: 74px 16px 0;
-  &__description {
+  padding: 74px 16px 88px;
+  &__contact {
+    display: inline-block;
+    padding: 4px 24px;
+    border-radius: 64px;
+    width: 278px;
+    height: 48px;
+    background: $lightBlue;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    text-decoration: none;
+  }
+  &__paragraph {
     font-size: 16px;
     line-height: 32px;
     font-weight: 300;
     text-align: center;
+    margin-bottom: 48px;
+  }
+  &__header {
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    color: $textDark;
+  }
+  &__hello {
+    display: none;
   }
   &__image {
     box-sizing: content-box;
@@ -13,26 +36,18 @@
     border-radius: 50%;
     border: 16px solid #f6f9fd;
   }
-  &__header {
-    font-size: 26px;
-    line-height: 32px;
-    text-align: center;
-    color: $textDark;
-  }
   &__image-container {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  &__hello {
-    display: none;
+
+  &__link {
+    font-weight: bold;
+    color: $lightBlue;
+    text-decoration: none;
   }
   &__special {
     color: $blue;
-  }
-  &__description {
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 300;
   }
 }
