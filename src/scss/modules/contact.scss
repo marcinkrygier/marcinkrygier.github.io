@@ -1,0 +1,38 @@
+.contact {
+  background: $lighterBlue;
+  padding: 64px 16px 88px;
+  &__description {
+   
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    color: $text;
+    margin-bottom: 56px;
+  }
+  &__header {
+    margin-bottom: 32px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: $textDark;
+  }
+&__mail {
+    display: inline-block;
+    padding: 4px 24px;
+    border-radius: 64px;
+   
+    height: 48px;
+    background: $lightBlue;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+
+}
+}
