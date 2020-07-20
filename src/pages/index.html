@@ -30,7 +30,9 @@
             alt="Marcin Krygier photo"
           />
           <span class="hero__bubble"
-            ><span class="hero__hello">Hey there!🖐</span></span
+            ><span class="hero__hello"
+              >Hello there! <span class="hand"> 🖐</span></span
+            ></span
           >
         </div>
         <div class="hero__description">
@@ -41,10 +43,10 @@
           </h1>
           <p class="hero__paragraph">
             You might be interested in checking the list of
-            <a class="hero__link" href="#skills"> my skills</a>. Do not forget to
-            have a glimpse at
-            <a class="hero__link" href="#projects">my projects</a>. Currently
-            I am looking for a new challenges so if you have one -
+            <a class="hero__link" href="#skills"> my skills</a>. Do not forget
+            to have a glimpse at
+            <a class="hero__link" href="#projects">my projects</a>. Currently I
+            am looking for a new challenges so if you have one -
             <a class="hero__link" href="#contact">contact me</a> 😊
           </p>
           <a class="hero__contact" href="mailto:krygier.mar@gmail.com"
@@ -105,133 +107,13 @@
           I started my frontend developer path in 2020. Since then, I have built
           some projects. Here is the list of the things I have done so far.
         </p>
-        <div class="projects-grid">
-          <article class="project">
-            <div class="project__window">
-              <span class="project__circle"></span>
-              <span class="project__circle"></span>
-              <span class="project__circle"></span>
-            </div>
-            <div class="project__content">
-              <img src="../assets/img/github.svg" alt="" />
-              <h3 class="project__grid project__title">
-                <span class="project__label">project:</span>
-                <span>podlaski git</span>
-              </h3>
-              <p class="project__grid project__grid--description">
-                <span class="project__label">description:</span
-                ><span>podlaskie aliasy dla gitowych komend</span>
-              </p>
-              <p class="project__grid">
-                <span class="project__label">demo:</span
-                ><span
-                  >&lt;<a
-                    class="project__link"
-                    href="#"
-                    title="podlaski git - demo"
-                    >see_here</a
-                  >&gt;</span
-                >
-              </p>
-              <p class="project__grid">
-                <span class="project__label">github:</span
-                ><span
-                  >&lt;<a
-                    class="project__link"
-                    href="#"
-                    title="podlaski git - code"
-                    >source_code</a
-                  >&gt;</span
-                >
-              </p>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project__window">
-              <span class="project__circle"></span>
-              <span class="project__circle"></span>
-              <span class="project__circle"></span>
-            </div>
-            <div class="project__content">
-              <img src="../assets/img/github.svg" alt="" />
-              <h3 class="project__grid project__title">
-                <span class="project__label">project:</span>
-                <span>podlaski git</span>
-              </h3>
-              <p class="project__grid project__grid--description">
-                <span class="project__label">description:</span
-                ><span>podlaskie aliasy dla gitowych komend</span>
-              </p>
-              <p class="project__grid">
-                <span class="project__label">demo:</span
-                ><span
-                  >&lt;<a
-                    class="project__link"
-                    href="#"
-                    title="podlaski git - demo"
-                    >see_here</a
-                  >&gt;</span
-                >
-              </p>
-              <p class="project__grid">
-                <span class="project__label">github:</span
-                ><span
-                  >&lt;<a
-                    class="project__link"
-                    href="#"
-                    title="podlaski git - code"
-                    >source_code</a
-                  >&gt;</span
-                >
-              </p>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project__window">
-              <span class="project__circle"></span>
-              <span class="project__circle"></span>
-              <span class="project__circle"></span>
-            </div>
-            <div class="project__content">
-              <img src="../assets/img/github.svg" alt="" />
-              <h3 class="project__grid project__title">
-                <span class="project__label">project:</span>
-                <span>podlaski git</span>
-              </h3>
-              <p class="project__grid project__grid--description">
-                <span class="project__label">description:</span
-                ><span>podlaskie aliasy dla gitowych komend</span>
-              </p>
-              <p class="project__grid">
-                <span class="project__label">demo:</span
-                ><span
-                  >&lt;<a
-                    class="project__link"
-                    href="#"
-                    title="podlaski git - demo"
-                    >see_here</a
-                  >&gt;</span
-                >
-              </p>
-              <p class="project__grid">
-                <span class="project__label">github:</span
-                ><span
-                  >&lt;<a
-                    class="project__link"
-                    href="#"
-                    title="podlaski git - code"
-                    >source_code</a
-                  >&gt;</span
-                >
-              </p>
-            </div>
-          </article>
-        </div>
+        <div class="projects-grid projects-grid--js"></div>
       </section>
       <section class="contact" id="contact">
         <h2 class="contact__header">Contact me</h2>
         <p class="contact__description">
-          I am open for new opportunities. If you have one for me we should talk!
+          I am open for new opportunities. If you have one for me we should
+          talk!
         </p>
         <div class="contact__links">
           <ul class="socials">
@@ -241,6 +123,8 @@
                   src="../assets/img/github-blue.svg"
                   class="socials__icon"
                   alt="Marcin Krygier github"
+                  target="_blank"
+                  rel="noopener noreferrer"
               /></a>
             </li>
             <li class="socials__item">
@@ -251,14 +135,16 @@
                   src="../assets/img/facebook.svg"
                   class="socials__icon"
                   alt="Marcin Krygier facebook page"
+                  target="_blank"
+                  rel="noopener noreferrer"
               /></a>
             </li>
           </ul>
-        
-        <a class="contact__mail" href="mailto:krygier.mar@gmail.com"
-          >krygier.mar@gmail.com</a
-        >
-      </div>
+
+          <a class="contact__mail" href="mailto:krygier.mar@gmail.com"
+            >krygier.mar@gmail.com</a
+          >
+        </div>
       </section>
     </main>
   </body>
