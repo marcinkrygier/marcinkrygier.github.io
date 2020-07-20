@@ -1,10 +1,19 @@
 .hero {
   padding: 74px 16px 88px;
+  @media (min-width: $tablet) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  &__bubble {
+    position: absolute;
+    left: 100%;
+    left: calc(50% + 90px);
+    top: -26px;
+  }
   &__contact {
     display: inline-block;
     padding: 4px 24px;
     border-radius: 64px;
-    width: 278px;
     height: 48px;
     background: $lightBlue;
     color: white;
@@ -16,21 +25,40 @@
   &__description {
     text-align: center;
   }
-  &__paragraph {
-    font-size: 16px;
-    line-height: 32px;
-    font-weight: 300;
-    text-align: center;
-    margin-bottom: 48px;
-  }
+
   &__header {
     font-size: 26px;
     line-height: 32px;
     text-align: center;
     color: $textDark;
+
+    @media (min-width: $desktop) {
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
   &__hello {
     display: none;
+    @media (min-width: $desktop) {
+      display: block;
+      background: $blue;
+      color: #fff;
+      border-radius: 16px;
+      font-weight: bold;
+      font-size: 32px;
+      padding: 16px 19px;
+      position: relative;
+      &:after {
+        content: "";
+        display: block;
+        left: 32px;
+        top: 100%;
+        width: 17.42px;
+        height: 22.66px;
+        background: url("../assets/img/speech.svg");
+        position: absolute;
+      }
+    }
   }
   &__image {
     box-sizing: content-box;
@@ -38,17 +66,35 @@
     height: 96px;
     border-radius: 50%;
     border: 16px solid #f6f9fd;
+
+    @media (min-width: $desktop) {
+      width: 178px;
+      height: 178px;
+      border: 24px solid #f6f9fd;
+    }
   }
   &__image-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
 
   &__link {
     font-weight: bold;
     color: $lightBlue;
     text-decoration: none;
+  }
+  &__paragraph {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 48px;
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 40px;
+    }
   }
   &__special {
     color: $blue;

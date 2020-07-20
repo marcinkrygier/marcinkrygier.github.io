@@ -2,6 +2,7 @@
   background: $blue;
   color: #ffffff;
   padding: 64px 16px 88px;
+  
   &__header {
     font-weight: bold;
     font-size: 36px;
@@ -12,10 +13,10 @@
 .skills-list {
   font-style: normal;
   color: $lighterBlue;
-  width: 288px;
   margin: 0 auto;
   list-style-type: none;
   padding: 0;
+  max-width: 278px;
   &__item {
     padding: 0 0 0 24px;
     margin: 0 0 16px;
