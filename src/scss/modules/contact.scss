@@ -2,6 +2,11 @@
   background: $lighterBlue;
   padding: 64px 16px 88px;
   text-align: center;
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 40px;
+    padding: 80px 0 126px;
+  }
   &__description {
     text-align: center;
     font-style: normal;
@@ -12,7 +17,7 @@
     @media (min-width: $desktop) {
       font-size: 20px;
       line-height: 40px;
-      margin: 40px 0 128px;
+      margin: 0 0 128px;
     }
   }
   &__header {
@@ -24,16 +29,17 @@
     @media (min-width: $desktop) {
       font-size: 48px;
       line-height: 56px;
+      margin: 0 0 40px;
     }
   }
   &__links {
     text-align: center;
     @media (min-width: $desktop) {
-      display: inline-flex;
+      display: flex;
       align-items: center;
-      justify-content: space-between;
-      max-width: 580px;
-      margin-right: 110px;
+      justify-content: center;
+
+      margin: 0 auto;
     }
   }
   &__mail {
@@ -47,5 +53,8 @@
     font-size: 20px;
     line-height: 40px;
     text-decoration: none;
+    @media (min-width: $desktop) {
+      margin-left: 110px;
+    }
   }
 }

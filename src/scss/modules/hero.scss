@@ -6,6 +6,7 @@
   }
   @media (min-width: $desktop) {
     max-width: 100%;
+    padding: 80px 0 176px;
   }
   &__bubble {
     position: absolute;
@@ -59,6 +60,7 @@
     @media (min-width: $desktop) {
       font-size: 32px;
       line-height: 40px;
+      margin: 72px 0 0 0;
     }
   }
   &__hello {
@@ -114,8 +116,9 @@
     text-align: center;
     margin-bottom: 48px;
     @media (min-width: $desktop) {
-      font-size: 20px;
+      font-size: 19px;
       line-height: 40px;
+      margin: 24px 0 68px;
     }
   }
   &__special {
