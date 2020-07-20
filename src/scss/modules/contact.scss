@@ -9,6 +9,11 @@
     font-size: 16px;
     line-height: 32px;
     color: $text;
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 40px;
+      margin: 40px 0 128px;
+    }
   }
   &__header {
     font-weight: bold;
@@ -16,6 +21,20 @@
     line-height: 48px;
     text-align: center;
     color: $textDark;
+    @media (min-width: $desktop) {
+      font-size: 48px;
+      line-height: 56px;
+    }
+  }
+  &__links {
+    text-align: center;
+    @media (min-width: $desktop) {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 580px;
+      margin-right: 110px;
+    }
   }
   &__mail {
     display: inline-block;
